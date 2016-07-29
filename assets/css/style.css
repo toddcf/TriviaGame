@@ -1,7 +1,56 @@
 header {
+	width: 100%;
+	background-color: #ffff00;
+	text-align: center;
+	margin: 0;
+}
 
+header h1 {
+	color: #ed3133;
+	font-size: 50px;
+	font-style: italic;
+	padding-bottom: 20px;
+}
+
+#logo {
+	align-items: center;
+	height: 300px;
+	padding-top: 30px;
+}
+
+#main-container {
+
+}
+
+#timer {
+
+}
+
+#start {
+
+}
+
+#q_and_a {
+
+}
+
+#question {
+
+}
+
+#answer {
+	
 }
 
 footer {
-	
+	width: 100%;
+	background-color: #ffff00;
+	text-align: center;
+	padding: 10px;
 }
+
+footer h3 {
+	color: #ed3133;
+}
+
+/*Mobile*/
