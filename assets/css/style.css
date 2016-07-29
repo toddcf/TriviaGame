@@ -3,6 +3,7 @@ header {
 	background-color: #ffff00;
 	text-align: center;
 	margin: 0;
+	clear: both;
 }
 
 header h1 {
@@ -21,30 +22,44 @@ header h1 {
 #main-container {
 	width: 100%;
 	background-color: black;
+	margin: 0;
 }
 
 .inner-containers {
 	border-radius: 15px;
+	padding: 20px;
+	clear: both;
+}
+
+#game-container {
+	width: 700px;
+	background-color: #ffff00;
+	margin: 0 auto;
+}
+
+#control-panel {
+	background-color: black;
+	width: 50%;
 }
 
 #timer {
-
+	background-color: #ffff00;
 }
 
 #start {
-
+	background-color: #ffff00;
 }
 
 #q_and_a {
-
+	background-color: black;
 }
 
 #question-box {
-
+	background-color: #ffff00;
 }
 
 #answers-box {
-
+	background-color: #ffff00;
 }
 
 footer {
@@ -52,6 +67,7 @@ footer {
 	background-color: #ffff00;
 	text-align: center;
 	padding: 10px;
+	clear: both;
 }
 
 footer h3 {
