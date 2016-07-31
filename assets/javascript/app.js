@@ -96,64 +96,64 @@ var questions = [
 	
 	{ question: "What video game did Bart try to shoplift?",
 		answer: {
-			"Touch of Death.",
-			"Bonestorm.",
-			"Radioactive Man.",
-			"Lee Carvallo\'s Putting Challenge."
+			correct: "Bonestorm",
+			incorrect_1: "Touch of Death",
+			incorrect_2: "Radioactive Man",
+			incorrect_3: "Lee Carvallo\'s Putting Challenge"
 		}
 	},
 	
 	{ question: "What did Homer ingest before going on a vision quest?",
 		answer: {
-			"Guatamalan Insanity Peppers.",
-			"Shelbyville Shrooms.",
-			"LSD.",
-			"Ayahuasca."
+			correct: "Guatamalan Insanity Peppers.",
+			incorrect_1: "Shelbyville Shrooms.",
+			incorrect_2: "LSD.",
+			incorrect_3: "Ayahuasca."
 		}
 	},
 	
 	{ question: "What secret society did Homer join?",
 		answer: {
-			"The Moderately-Priced Masons.",
-			"The Diamond Shredders.",
-			"The Stonecutters.",
-			"The Star Killers."
+			incorrect_1: "The Moderately-Priced Masons.",
+			incorrect_2: "The Diamond Shredders.",
+			correct: "The Stonecutters.",
+			incorrect_3: "The Star Killers."
 		}
 	},
 	
 	{question: "What did Lisa build in her free time while the teachers union was on strike?",
 		answer: {
-			"A perpetual motion machine.",
-			"An AI robot.",
-			"A recycling plant.",
-			"A Rube Goldberg machine."
+			correct: "A perpetual motion machine.",
+			incorrect_1: "An AI robot.",
+			incorrect_2: "A recycling plant.",
+			incorrect_3: "A Rube Goldberg machine."
 		}
 	},
 	
 	{ question: "After Milhouse\'s parents got divorced, his mother started dating...",
 		answer: {
-			"Her sewing instructor.",
-			"Milhouse\'s dad\'s boss at the cracker factory.",
-			"A woman she met at the library.",
-			"An American Gladiator named Pyro."
+			incorrect_1: "Her sewing instructor.",
+			incorrect_2: "Milhouse\'s dad\'s boss at the cracker factory.",
+			incorrect_3: "A woman she met at the library.",
+			correct: "An American Gladiator named Pyro."
 		}
 	},
 
 	{ question: "How did Homer achieve work-from-home status?",
 		answer: {
-			"He got his weight above 300 pounds and claimed disability.",
-			"He won a donut-eating contest at work.",
-			"He rigged a security camera to play a loop of him working. (Like in that movie, \"The Bus That Couldn't Slow Down.\")",
-			"He won a bet that Mr. Burns couldn’t think of his name."
+			correct: "He got his weight above 300 pounds and claimed disability.",
+			incorrect_1: "He won a donut-eating contest at work.",
+			incorrect_2: "He rigged a security camera to play a loop of him working. (Like in that movie, \"The Bus That Couldn't Slow Down.\")",
+			incorrect_3: "He won a bet that Mr. Burns couldn’t think of his name."
 		}
 	},
 	
 	{ question: "At which store did Homer purchase a gun?",
 		answer: {
-			"Guns \"R\" Us.",
-			"Bloodbath and Beyond.",
-			"Lionel Hutz\'s Discount Gun Emporium.",
-			"Target (with a human silhouette logo instead of a round target)."
+			incorrect_1: "Guns \"R\" Us.",
+			correct: "Bloodbath and Beyond.",
+			incorrect_2: "Lionel Hutz\'s Discount Gun Emporium.",
+			incorrect_3: "Target (with a human silhouette logo instead of a round target)."
 		}
 	}	
 ];
