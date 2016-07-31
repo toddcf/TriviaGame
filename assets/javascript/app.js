@@ -18,7 +18,7 @@ var questions = [
 			incorrect_2: "Auric Butterfinger",
 			incorrect_3: "Dr. Yes"
 		}
-	}
+	},
 	
 	{ question: "Why did Ned Flanders check himself into a mental hospital?",
 		answer: {
@@ -27,7 +27,7 @@ var questions = [
 			incorrect_2: "Soon after investing all his money in opening a store of left-handed items (\"The Leftorium\"), a rare medical condition caused Flanders to become right-handed.",
 			incorrect_3: "He thought it was the Christian thing to do."
 		}
-	}
+	},
 	
 	{ question:	"Why did Homer have to go \"back\" to college?",
 		answer: {
@@ -36,7 +36,7 @@ var questions = [
 			incorrect_2: "He had an old score to settle with his archnemesis, the Dean of Students.",
 			incorrect_3: "It was one of the terms of his parole."
 		}
-	}
+	},
 
 	{ question: "What did Lisa\'s Valentine\'s Day card to Ralph Wiggum say?",
 		answer: {
@@ -45,7 +45,7 @@ var questions = [
 			incorrect_2: "\"Generic Platonic Holiday Card,\" with no picture at all.",
 			incorrect_3: "\"You'll do.\""
 		}
-	}
+	},
 
 	{ question: "Why did all the kids in Springfield get put on a citywide curfew?",
 		answer: {
@@ -55,7 +55,7 @@ var questions = [
 			incorrect_3: "The kids got put on curfew for breaking curfew."
 		}
 
-	}	
+	},	
 	
 	{ question: "What deductions did Homer claim on his taxes?",
 		answer: {
@@ -65,7 +65,7 @@ var questions = [
 			incorrect_3: "Maggie is seven people.",
 			incorrect_4: "Bart was wounded in Vietnam."
 		}
-	}
+	},
 	
 	{ question: "What gave Homer the idea to go to clown college?",
 		answer: {
@@ -74,7 +74,7 @@ var questions = [
 			incorrect_2: "He received a recorded phone message from Krusty the Klown\'s AT-5000 auto-dialer.",
 			incorrect_3: "His coworkers (Lenny and Carl) dared him to after Mr. Burns said he would fund any employee’s education."
 		}
-	}
+	},
 
 	{ question: "How did Homer make it up to Lisa after Bart caused her to miss an event she was really looking forward to?",
 		answer: {
@@ -83,7 +83,7 @@ var questions = [
 			incorrect_2: "He didn\'t parent her for twenty-four hours.",
 			incorrect_3: "He bought her a lemur."
 		}
-	}
+	},
 
 	{ question: "How did Homer score coupons to a spa for himself and Marge?",
 		answer: {
@@ -92,70 +92,70 @@ var questions = [
 			incorrect_2: "By selling his spare Christmas tree stand to Ned Flanders at a rip-off rate.",
 			incorrect_3: "Armed robbery."
 		}
-	}
+	},
 	
+	{ question: "What video game did Bart try to shoplift?",
+		answer: {
+			"Touch of Death.",
+			"Bonestorm.",
+			"Radioactive Man.",
+			"Lee Carvallo\'s Putting Challenge."
+		}
+	},
 	
+	{ question: "What did Homer ingest before going on a vision quest?",
+		answer: {
+			"Guatamalan Insanity Peppers.",
+			"Shelbyville Shrooms.",
+			"LSD.",
+			"Ayahuasca."
+		}
+	},
 	
+	{ question: "What secret society did Homer join?",
+		answer: {
+			"The Moderately-Priced Masons.",
+			"The Diamond Shredders.",
+			"The Stonecutters.",
+			"The Star Killers."
+		}
+	},
 	
+	{question: "What did Lisa build in her free time while the teachers union was on strike?",
+		answer: {
+			"A perpetual motion machine.",
+			"An AI robot.",
+			"A recycling plant.",
+			"A Rube Goldberg machine."
+		}
+	},
 	
-	"What video game did Bart try to shoplift?",
-	"What did Homer ingest before going on a vision quest?",
-	"What secret society did Homer join?",
-	"What did Lisa build in her free time while the teachers union was on strike?",
-	"After Milhouse\'s parents got divorced, his mother started dating...",
-	"How did Homer achieve work-from-home status?",
-	"At which store did Homer purchase a gun?"
-];
+	{ question: "After Milhouse\'s parents got divorced, his mother started dating...",
+		answer: {
+			"Her sewing instructor.",
+			"Milhouse\'s dad\'s boss at the cracker factory.",
+			"A woman she met at the library.",
+			"An American Gladiator named Pyro."
+		}
+	},
 
-// Array of answers for each question:
-
-var answers_09 = [
-	"Touch of Death.",
-	"Bonestorm.",
-	"Radioactive Man.",
-	"Lee Carvallo\'s Putting Challenge."
-];
-
-var answers_10 = [
-	"Guatamalan insanity peppers.",
-	"Shelbyville Mushrooms.",
-	"LSD.",
-	"Ayahuasca."
-];
-
-var answers_11 = [
-	"The Moderately-Priced Masons.",
-	"The Diamond Shredders.",
-	"The Stonecutters.",
-	"The Star Killers."
-];
-
-var answers_12 = [
-	"A perpetual motion machine.",
-	"An AI robot.",
-	"A recycling plant.",
-	"A Rube Goldberg machine."
-];
-
-var answers_13 = [
-	"Her sewing instructor.",
-	"Milhouse\'s dad\'s boss at the cracker factory.",
-	"A woman she met at the library.",
-	"An American Gladiator named Pyro."
-];
-
-var answers_14 = [
-	"He got his weight above 300 pounds and claimed disability."
-	"He won a donut-eating contest at work."
-	"He rigged a security camera to play a loop of him working. (Like in that movie, \"The Bus That Couldn't Slow Down.\")",
-	"He won a bet that Mr. Burns couldn’t think of his name."
-];
-
-var answers_15 = [
-	"Guns \"R\" Us.",
-	"Bloodbath and Beyond.",
-	"Lionel Hutz\'s Discount Gun Emporium.",
-	"Target (with a human silhouette logo instead of a round target)."
+	{ question: "How did Homer achieve work-from-home status?",
+		answer: {
+			"He got his weight above 300 pounds and claimed disability.",
+			"He won a donut-eating contest at work.",
+			"He rigged a security camera to play a loop of him working. (Like in that movie, \"The Bus That Couldn't Slow Down.\")",
+			"He won a bet that Mr. Burns couldn’t think of his name."
+		}
+	},
+	
+	{ question: "At which store did Homer purchase a gun?",
+		answer: {
+			"Guns \"R\" Us.",
+			"Bloodbath and Beyond.",
+			"Lionel Hutz\'s Discount Gun Emporium.",
+			"Target (with a human silhouette logo instead of a round target)."
+		}
+	}	
 ];
 
 // On Click of "Start" button, call game function.
