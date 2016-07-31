@@ -9,10 +9,27 @@ var userGuess
 var q01_image
 var q02_image
 
-// Array of questions:
+// Array of questions. Each question is an object. Within the question object is another object with the correct and incorrect answers.
 var questions = [
-	"Homer\'s supervillain boss was named...",
-	"Why did Ned Flanders check himself into a mental hospital?",
+	{ question:	"Homer\'s supervillain boss was named...",
+		answer: {
+			correct: "Hank Scorpio",
+			incorrect_1: "Ernst Stavro Blofeld",
+			incorrect_2: "Auric Butterfinger",
+			incorrect_3: "Dr. Yes"
+		}
+	}
+	
+	{ question: "Why did Ned Flanders check himself into a mental hospital?",
+		answer: {
+			correct: "A tornado hit Springfield and destroyed \*only\* his house.  When the townspeople banded together to rebuild it, they did a piss-poor job, and Ned lost his marbles.",
+			incorrect_1: "His wife died after being knocked off the back of the stadium bleachers at the Springfield Speedway by several T-shirt cannons.",
+			incorrect_2: "Soon after investing all his money in opening a store of left-handed items (\"The Leftorium\"), a rare medical condition caused Flanders to become right-handed.",
+			incorrect_3: "He thought it was the Christian thing to do."
+		}
+	}
+	
+
 	"Why did Homer have to go \"back\" to college?",
 	"What did Lisa\'s Valentine\'s Day card to Ralph Wiggum say?",
 	"Why did all the kids in Springfield get put on a citywide curfew?",
@@ -30,18 +47,9 @@ var questions = [
 ];
 
 // Array of answers for each question:
-var answers_00 = [
-	"Ernst Stavro Blofeld",
-	"Auric Butterfinger",
-	"Dr. Yes",
-	"Hank Scorpio"
-];
 
 var answers_01 = [
-	"A tornado hit Springfield and destroyed \*only\* his house.  When the townspeople banded together to rebuild it, they did a piss-poor job, and Ned lost his marbles.",
-	"His wife died after being knocked off the back of the stadium bleachers at the Springfield Speedway by several T-shirt cannons.",
-	"Soon after investing all his money in opening a store of left-handed items (\"The Leftorium\"), a rare medical condition caused Flanders to become right-handed.",
-	"He thought it was the Christian thing to do."
+	
 ];
 
 var answers_02 = [
@@ -148,7 +156,7 @@ var answers_15 = [
 	// Declare all necessary variables inside of the game.
 		var timer = 0
 
-	// Use a for loop(?) to push first question from array to #question span.
+	// Use a for loop(?) to RANDOMLY SELECT and push first question from array to #question span.
 		$('#question').text(question);
 		// Reset timer to start point.
 			// (45 seconds? Adjust when testing game to find best amount of time.)
