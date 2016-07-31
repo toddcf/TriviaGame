@@ -29,14 +29,75 @@ var questions = [
 		}
 	}
 	
+	{ question:	"Why did Homer have to go \"back\" to college?",
+		answer: {
+			correct: "He caused a meltdown in a nuclear reactor simulator that had no actual radioactive material in it.",
+			incorrect_1: "He won a mandatory scholarship from a radio call-in show on KBBT.",
+			incorrect_2: "He had an old score to settle with his archnemesis, the Dean of Students.",
+			incorrect_3: "It was one of the terms of his parole."
+		}
+	}
 
-	"Why did Homer have to go \"back\" to college?",
-	"What did Lisa\'s Valentine\'s Day card to Ralph Wiggum say?",
-	"Why did all the kids in Springfield get put on a citywide curfew?",
-	"What deductions did Homer claim on his taxes?",
-	"What gave Homer the idea to go to clown college?",
-	"How did Homer make it up to Lisa after Bart caused her to miss an event she was really looking forward to?",
-	"How did Homer score coupons to a spa for himself and Marge?",
+	{ question: "What did Lisa\'s Valentine\'s Day card to Ralph Wiggum say?",
+		answer: {
+			correct: "\"I choo-choo-choose you,\" with a picture of a train.",
+			incorrect_1: "\"My heart apes for you,\" with a picture of an ape.",
+			incorrect_2: "\"Generic Platonic Holiday Card,\" with no picture at all.",
+			incorrect_3: "\"You'll do.\""
+		}
+	}
+
+	{ question: "Why did all the kids in Springfield get put on a citywide curfew?",
+		answer: {
+			correct: "Homer and his drunken friends trashed the elementary school, and everyone assumed it was done by child vandals.",
+			incorrect_1: "Bart drove a tractor through the school while blasting Alice Cooper\'s \"School’s Out.\"",
+			incorrect_2: "Bart wore a MAD Magazine \"Down With Homework\" T-shirt that sparked a school riot.",
+			incorrect_3: "The kids got put on curfew for breaking curfew."
+		}
+
+	}	
+	
+	{ question: "What deductions did Homer claim on his taxes?",
+		answer: {
+			correct: "All of these.",
+			incorrect_1: "Marge requires twenty-four hour nursing care.",
+			incorrect_2: "Lisa\'s a clergyman.",
+			incorrect_3: "Maggie is seven people.",
+			incorrect_4: "Bart was wounded in Vietnam."
+		}
+	}
+	
+	{ question: "What gave Homer the idea to go to clown college?",
+		answer: {
+			correct: "He was reading billboards on \"new billboard day\" and saw Krusty the Klown\'s advertisement.",
+			incorrect_1: "Barney Gumble woke up from a drunken blackout with a diploma from Krusty\'s Clown College.",
+			incorrect_2: "He received a recorded phone message from Krusty the Klown\'s AT-5000 auto-dialer.",
+			incorrect_3: "His coworkers (Lenny and Carl) dared him to after Mr. Burns said he would fund any employee’s education."
+		}
+	}
+
+	{ question: "How did Homer make it up to Lisa after Bart caused her to miss an event she was really looking forward to?",
+		answer: {
+			correct: "He helped her break into a museum.",
+			incorrect_1: "He suffered through a vegetarian meal with her.",
+			incorrect_2: "He didn\'t parent her for twenty-four hours.",
+			incorrect_3: "He bought her a lemur."
+		}
+	}
+
+	{ question: "How did Homer score coupons to a spa for himself and Marge?",
+		answer: {
+			correct: "By posing as \"Count Homer\" and test driving a Bentley.",
+			incorrect_1: "In a raffle while visiting Grandpa at the old folks home.",
+			incorrect_2: "By selling his spare Christmas tree stand to Ned Flanders at a rip-off rate.",
+			incorrect_3: "Armed robbery."
+		}
+	}
+	
+	
+	
+	
+	
 	"What video game did Bart try to shoplift?",
 	"What did Homer ingest before going on a vision quest?",
 	"What secret society did Homer join?",
@@ -47,60 +108,6 @@ var questions = [
 ];
 
 // Array of answers for each question:
-
-var answers_01 = [
-	
-];
-
-var answers_02 = [
-	"He won a mandatory scholarship from a radio call-in show on KBBT.",
-	"He caused a meltdown in a nuclear reactor simulator that had no actual radioactive material in it.",
-	"He had an old score to settle with his archnemesis, the Dean of Students.",
-	"It was one of the terms of his parole."
-];
-
-var answers_03 = [
-	"\"I choo-choo-choose you,\" with a picture of a train.",
-	"\"My heart apes for you,\" with a picture of an ape.",
-	"\"Generic Platonic Holiday Card,\" with no picture at all.",
-	"\"You'll do.\""
-];
-
-var answers_04 = [
-	"Bart drove a tractor through the school while blasting Alice Cooper\'s \"School’s Out.\"",
-	"Bart wore a MAD Magazine \"Down With Homework\" T-shirt that sparked a school riot.",
-	"Homer and his drunken friends trashed the elementary school, and everyone assumed it was done by child vandals.",
-	"The kids got put on curfew for breaking curfew."
-];
-
-var answers_05 = [
-	"Marge requires twenty-four hour nursing care.",
-	"Lisa\'s a clergyman.",
-	"Maggie is seven people.",
-	"Bart was wounded in Vietnam.",
-	"All of the above."
-];
-
-var answers_06 = [
-	"Barney Gumble woke up from a drunken blackout with a diploma from Krusty\'s Clown College.",
-	"He was reading billboards on \"new billboard day\" and saw Krusty the Klown\'s advertisement.",
-	"He received a recorded phone message from Krusty the Klown\'s AT-5000 auto-dialer.",
-	"His coworkers (Lenny and Carl) dared him to after Mr. Burns said he would fund any employee’s education."
-];
-
-var answers_07 = [
-	"He helped her break into a museum.",
-	"He suffered through a vegetarian meal with her.",
-	"He didn\'t parent her for twenty-four hours.",
-	"He bought her a lemur."
-];
-
-var answers_08 = [
-	"In a raffle while visiting Grandpa at the old folks home.",
-	"By posing as \"Count Homer\" and test driving a Bentley.",
-	"By selling his spare Christmas tree stand to Ned Flanders at a rip-off rate.",
-	"Armed robbery."
-];
 
 var answers_09 = [
 	"Touch of Death.",
