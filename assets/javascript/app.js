@@ -1,13 +1,10 @@
 $( document ).ready(function() {
 
-// Declare all necessary variables outside of the game function.
-var correct = 0
-var incorrect = 0
+// Global variables:
+var correctScore
+var incorrectScore
 var userGuess
-	
-// Declare each image as a variable.
-var q01_image
-var q02_image
+var timer
 
 // Array of questions. Each question is an object. Within the question object is another object with the correct and incorrect answers.
 var questions = [
@@ -173,10 +170,32 @@ var questions = [
 	}	
 ];
 
-// On Click of "Start" button, call game function.
+// Functions:
 
-	// Declare all necessary variables inside of the game.
-		var timer = 0
+// Main Process:
+
+// Name game function:
+var startGame = function() {
+	// Reset timer.
+	var timer			= 0;
+	// Reset correctScore
+	var correctScore	= 0;
+	// Reset incorrectScore
+	var incorrectScore	= 0;
+	// Push these changes to HTML.
+
+	// Choose a random question:
+	questions = Math.floor(Math.random() * questions.length);
+	// Above, do I need to add +1 to get it to pick the last question in the array?
+	console.log(questions);
+	// DISPLAY the question in HTML.
+
+	// RANDOMIZE the appropriate answer options:
+		this.answer = Math.floor(Math.random() * answer.length);
+		// DISPLAY the answers in HTML.
+		console.log(answer);
+
+
 
 	// Use a for loop(?) to RANDOMLY SELECT and push first question from array to #question span.
 		$('#question').text(question);
@@ -206,5 +225,9 @@ var questions = [
 
 	// After last question, display score, etc., and "Play Again?" button.
 	// On Click of "Play Again?", reset the game.
+
+	}
+// On Click of "Start" button, call startGame function.
+
 
 };
