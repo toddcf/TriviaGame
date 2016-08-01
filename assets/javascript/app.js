@@ -7,7 +7,7 @@ var userGuess
 var timer
 
 // Array of questions. Each question is an object. Within the question object is another object with the correct and incorrect answers.
-var questions = [
+var questionsToPick = [
 	{ question:	"Homer\'s supervillain boss was named...",
 		answer: {
 			correct: "Hank Scorpio",
@@ -171,29 +171,34 @@ var questions = [
 ];
 
 // Functions:
+	
+	// Choose a random question:
+	questionsToPick = questionsToPick[Math.floor(Math.random() * questionsToPick.length)].question;
+	// Above, do I need to add +1 to get it to pick the last question in the array?
+	console.log(questionsToPick);
+	// DISPLAY the question in HTML.
+	$('#question').html(questionsToPick);
+
+	// Test answer
+	questionsToPick();
+	// RANDOMIZE the appropriate answer options:
+		// this.answer = Math.floor(Math.random() * this.answer.length);
+		// DISPLAY the answers in HTML.
+		console.log(questionsToPick.answer);
+		$('#answers').text(questionsToPick);
 
 // Main Process:
 
-// Name game function:
-var startGame = function() {
-	// Reset timer.
-	var timer			= 0;
-	// Reset correctScore
-	var correctScore	= 0;
-	// Reset incorrectScore
-	var incorrectScore	= 0;
-	// Push these changes to HTML.
+	// Starts and restarts the game:
+	var startGame = function() {
+		// Reset timer.
+		var timer			= 0;
+		// Reset correctScore
+		var correctScore	= 0;
+		// Reset incorrectScore
+		var incorrectScore	= 0;
+		// Push these changes to HTML.
 
-	// Choose a random question:
-	questions = Math.floor(Math.random() * questions.length);
-	// Above, do I need to add +1 to get it to pick the last question in the array?
-	console.log(questions);
-	// DISPLAY the question in HTML.
-
-	// RANDOMIZE the appropriate answer options:
-		this.answer = Math.floor(Math.random() * answer.length);
-		// DISPLAY the answers in HTML.
-		console.log(answer);
 
 
 
@@ -227,7 +232,9 @@ var startGame = function() {
 	// On Click of "Play Again?", reset the game.
 
 	}
+
 // On Click of "Start" button, call startGame function.
+// Starts the game the first time.
+startGame();
 
-
-};
+});
