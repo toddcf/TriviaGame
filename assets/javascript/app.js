@@ -1,8 +1,8 @@
 $( document ).ready(function() {
 
 // Global variables:
-var correctScore
-var incorrectScore
+var correctCount	= 0
+var incorrectCount	= 0
 var userGuess
 var timer
 
@@ -20,7 +20,7 @@ var questionsToPick = [
 	
 	{ question: "Why did Ned Flanders check himself into a mental hospital?",
 		answer: {
-			correct: "A tornado hit Springfield and destroyed \*only\* his house.  When the townspeople banded together to rebuild it, they did a piss-poor job, and Ned lost his marbles.",
+			correct: "A tornado hit Springfield and destroyed ONLY his house.  When the townspeople banded together to rebuild it, they did a piss-poor job, and Ned lost his marbles.",
 			incorrect_1: "His wife died after being knocked off the back of the stadium bleachers at the Springfield Speedway by several T-shirt cannons.",
 			incorrect_2: "Soon after investing all his money in opening a store of left-handed items (\"The Leftorium\"), a rare medical condition caused Flanders to become right-handed.",
 			incorrect_3: "He thought it was the Christian thing to do."
@@ -79,7 +79,7 @@ var questionsToPick = [
 		picture: "../images/krustys_clown_college_billboard.png"
 	},
 
-	{ question: "How did Homer make it up to Lisa after Bart caused her to miss an event she was really looking forward to?",
+	{ question: "How did Homer make it up to Lisa after Bart glued a bunch of novelty items to his face and caused her to miss an event she was really looking forward to?",
 		answer: {
 			correct: "He helped her break into a museum.",
 			incorrect_1: "He suffered through a vegetarian meal with her.",
@@ -179,13 +179,13 @@ var questionsToPick = [
 	// DISPLAY the question in HTML.
 	$('#question').html(questionsToPick);
 
-	// Test answer
-	questionsToPick();
+	// Test answer.  THIS IS NOT WORKING.
+	var answers = this.answer.correct;
 	// RANDOMIZE the appropriate answer options:
 		// this.answer = Math.floor(Math.random() * this.answer.length);
 		// DISPLAY the answers in HTML.
-		console.log(questionsToPick.answer);
-		$('#answers').text(questionsToPick);
+		console.log(answers);
+		$('#answers').html(SOMETHING);
 
 // Main Process:
 
@@ -193,48 +193,61 @@ var questionsToPick = [
 	var startGame = function() {
 		// Reset timer.
 		var timer			= 0;
-		// Reset correctScore
-		var correctScore	= 0;
-		// Reset incorrectScore
-		var incorrectScore	= 0;
+		// Reset correctCount
+		var correctCount	= 0;
+		// Reset incorrectCount
+		var incorrectCount	= 0;
 		// Push these changes to HTML.
 
 
 
 
-	// Use a for loop(?) to RANDOMLY SELECT and push first question from array to #question span.
-		$('#question').text(question);
-		// Reset timer to start point.
-			// (45 seconds? Adjust when testing game to find best amount of time.)
-		// Begin counting down.
+		// Use a for loop(?) to RANDOMLY SELECT and push first question from array to #question span.
+			// Reset timer to start point.
+				// (45 seconds? Adjust when testing game to find best amount of time.)
+			// Begin counting down.
 
-	// Use for loop(?) to push first "answers" array to #answers span.
-		// Array randomly chooses order in which to display the answers each time.
+		// Use for loop(?) to push first "answers" array to #answers span.
+			// Array randomly chooses order in which to display the answers each time.
 
-	// If Q1 is correct...
-		// Display image.
-			// something like: VAR.eq(3).append(image);
-		// Congratulate player.
-		// Add to "correct" tally.
-		// empty div or span.
-	// If Q1 is incorrect...
-		// Display image.
-		// Tell player this was incorrect. Notify of correct answer.
-		// Add to "incorrect" tally.
-		// empty div or span.
+		// TIMER -- Does it go before or after if/else?
+		// If timer runs out, question is marked incorrect.
+			// Display "Time Up," then copy and paste from "If Q1 is incorrect" above.
 
-	// If timer runs out, question is marked incorrect.
-		// Copy and paste from "If Q1 is incorrect" above.
+		// If userGuess is correct...
+		if (userGuess == correct) {
+			// Display image.
+				// something like: VAR.eq(3).append(image);
+			// Congratulate player.
+			// Add to "correct" tally.
+			correctCount = correctCount++;
+			console.log(correctCount);
+			// empty div or span.
+		}
+		// If userGuess is incorrect...
+		else {
+			// Display image.
+			// Tell player this was incorrect. Notify of correct answer.
+			// Add to "incorrect" tally.
+			incorrectCount = incorrectCount++;
+			console.log(incorrectCount);
+			// empty div or span.
+		}
 
-	// Advance to the next question.
+		// Advance to the next question.
 
-	// After last question, display score, etc., and "Play Again?" button.
-	// On Click of "Play Again?", reset the game.
+		// Do not repeat questions.
 
+		// Stop after questionsToPick.length.
+
+		// After last question, display score, etc., and "Play Again?" button.
+		// On Click of "Play Again?", reset the game.
+		confirm("Good work! Play again?")
+			if (true) {
+				startGame();
+			}
+			else {
+				alert("Thanks for playing!");
+			}
 	}
-
-// On Click of "Start" button, call startGame function.
-// Starts the game the first time.
-startGame();
-
 });
