@@ -10,10 +10,10 @@ var timer
 var questionsToPick = [
 	{ question:	"Homer\'s supervillain boss was named...",
 		answer: {
-			correct: "Hank Scorpio",
 			incorrect_1: "Ernst Stavro Blofeld",
 			incorrect_2: "Auric Butterfinger",
-			incorrect_3: "Dr. Yes"
+			incorrect_3: "Dr. Yes",
+			correct: "Hank Scorpio"
 		},
 		picture: "../images/hank_scorpio_posing.jpg"
 	},
@@ -30,8 +30,8 @@ var questionsToPick = [
 	
 	{ question:	"Why did Homer have to go \"back\" to college?",
 		answer: {
-			correct: "He caused a meltdown in a nuclear reactor simulator that had no actual radioactive material in it.",
 			incorrect_1: "He won a mandatory scholarship from a radio call-in show on KBBT.",
+			correct: "He caused a meltdown in a nuclear reactor simulator that had no actual radioactive material in it.",
 			incorrect_2: "He had an old score to settle with his archnemesis, the Dean of Students.",
 			incorrect_3: "It was one of the terms of his parole."
 		},
@@ -50,9 +50,9 @@ var questionsToPick = [
 
 	{ question: "Why did all the kids in Springfield get put on a citywide curfew?",
 		answer: {
-			correct: "Homer and his drunken friends trashed the elementary school, and everyone assumed it was done by child vandals.",
 			incorrect_1: "Bart drove a tractor through the school while blasting Alice Cooper\'s \"School’s Out.\"",
 			incorrect_2: "Bart wore a MAD Magazine \"Down With Homework\" T-shirt that sparked a school riot.",
+			correct: "Homer and his drunken friends trashed the elementary school, and everyone assumed it was done by child vandals.",
 			incorrect_3: "The kids got put on curfew for breaking curfew."
 		},
 		picture: "../images/homer_drunk_driving.jpg"
@@ -60,11 +60,11 @@ var questionsToPick = [
 	
 	{ question: "What deductions did Homer claim on his taxes?",
 		answer: {
-			correct: "All of these.",
 			incorrect_1: "Marge requires twenty-four hour nursing care.",
 			incorrect_2: "Lisa\'s a clergyman.",
 			incorrect_3: "Maggie is seven people.",
-			incorrect_4: "Bart was wounded in Vietnam."
+			incorrect_4: "Bart was wounded in Vietnam.",
+			correct: "All of these."
 		},
 		picture: "../images/homer_simpson_taxes.jpg"
 	},
@@ -81,8 +81,8 @@ var questionsToPick = [
 
 	{ question: "How did Homer make it up to Lisa after Bart glued a bunch of novelty items to his face and caused her to miss an event she was really looking forward to?",
 		answer: {
-			correct: "He helped her break into a museum.",
 			incorrect_1: "He suffered through a vegetarian meal with her.",
+			correct: "He helped her break into a museum.",
 			incorrect_2: "He didn\'t parent her for twenty-four hours.",
 			incorrect_3: "He bought her a lemur."
 		},
@@ -91,8 +91,8 @@ var questionsToPick = [
 
 	{ question: "How did Homer score coupons to a spa for himself and Marge?",
 		answer: {
-			correct: "By posing as \"Count Homer\" and test driving a Bentley.",
 			incorrect_1: "In a raffle while visiting Grandpa at the old folks home.",
+			correct: "By posing as \"Count Homer\" and test driving a Bentley.",
 			incorrect_2: "By selling his spare Christmas tree stand to Ned Flanders at a rip-off rate.",
 			incorrect_3: "Armed robbery."
 		},
@@ -101,8 +101,8 @@ var questionsToPick = [
 	
 	{ question: "What video game did Bart try to shoplift?",
 		answer: {
-			correct: "Bonestorm",
 			incorrect_1: "Touch of Death",
+			correct: "Bonestorm",
 			incorrect_2: "Radioactive Man",
 			incorrect_3: "Lee Carvallo\'s Putting Challenge"
 		},
@@ -180,7 +180,8 @@ var questionsToPick = [
 	$('#question').html(questionsToPick);
 
 	// Test answer.  THIS IS NOT WORKING.
-	var answers = this.answer.correct;
+	
+	var answers = questionsToPick.answer.correct;
 	// RANDOMIZE the appropriate answer options:
 		// this.answer = Math.floor(Math.random() * this.answer.length);
 		// DISPLAY the answers in HTML.
