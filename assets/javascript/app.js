@@ -46,133 +46,159 @@ function gameFunction () {
 			picture: "../images/nuclear_inspection_simulator_van.png"
 		},
 
-		{ question: "What did Lisa\'s Valentine\'s Day card to Ralph Wiggum say?",
-			answer: {
-				correct: "\"I choo-choo-choose you,\" with a picture of a train.",
-				incorrect_1: "\"My heart apes for you,\" with a picture of an ape.",
-				incorrect_2: "\"Generic Platonic Holiday Card,\" with no picture at all.",
-				incorrect_3: "\"You'll do.\""
+		question04: {
+			ask:		"What did Lisa\'s Valentine\'s Day card to Ralph Wiggum say?",
+			correct:	"option1",
+			options: {
+				option1: "\"I choo-choo-choose you,\" with a picture of a train.",
+				option2: "\"My heart apes for you,\" with a picture of an ape.",
+				option3: "\"Generic Platonic Holiday Card,\" with no picture at all.",
+				option4: "\"You'll do.\""
 			},
 			picture: "../images/choo_choo_choose_you.png"
 		},
 
-		{ question: "Why did all the kids in Springfield get put on a citywide curfew?",
-			answer: {
-				incorrect_1: "Bart drove a tractor through the school while blasting Alice Cooper\'s \"School’s Out.\"",
-				incorrect_2: "Bart wore a MAD Magazine \"Down With Homework\" T-shirt that sparked a school riot.",
-				correct: "Homer and his drunken friends trashed the elementary school, and everyone assumed it was done by child vandals.",
-				incorrect_3: "The kids got put on curfew for breaking curfew."
+		question05: {
+			ask:		"Why did all the kids in Springfield get put on a citywide curfew?",
+			correct:	"option3",
+			options: {
+				option1: "Bart drove a tractor through the school while blasting Alice Cooper\'s \"School’s Out.\"",
+				option2: "Bart wore a MAD Magazine \"Down With Homework\" T-shirt that sparked a school riot.",
+				option3: "Homer and his drunken friends trashed the elementary school, and everyone assumed it was done by child vandals.",
+				option4: "The kids got put on curfew for breaking curfew."
 			},
 			picture: "../images/homer_drunk_driving.jpg"
 		},	
 		
-		{ question: "What deductions did Homer claim on his taxes?",
-			answer: {
-				incorrect_1: "Marge requires twenty-four hour nursing care.",
-				incorrect_2: "Lisa\'s a clergyman.",
-				incorrect_3: "Maggie is seven people.",
-				incorrect_4: "Bart was wounded in Vietnam.",
-				correct: "All of these."
+		question06: {
+			ask:		"What deductions did Homer claim on his taxes?",
+			correct:	"option5",
+			options: {
+				option1: "Marge requires twenty-four hour nursing care.",
+				option2: "Lisa\'s a clergyman.",
+				option3: "Maggie is seven people.",
+				option4: "Bart was wounded in Vietnam.",
+				option5: "All of these."
 			},
 			picture: "../images/homer_simpson_taxes.jpg"
 		},
 		
-		{ question: "What gave Homer the idea to go to clown college?",
-			answer: {
-				correct: "He was reading billboards on \"new billboard day\" and saw Krusty the Klown\'s advertisement.",
-				incorrect_1: "Barney Gumble woke up from a drunken blackout with a diploma from Krusty\'s Clown College.",
-				incorrect_2: "He received a recorded phone message from Krusty the Klown\'s AT-5000 auto-dialer.",
-				incorrect_3: "His coworkers (Lenny and Carl) dared him to after Mr. Burns said he would fund any employee’s education."
+		question07: {
+			ask:		"What gave Homer the idea to go to clown college?",
+			correct:	"option1",
+			options: {
+				option1: "He was reading billboards on \"new billboard day\" and saw Krusty the Klown\'s advertisement.",
+				option2: "Barney Gumble woke up from a drunken blackout with a diploma from Krusty\'s Clown College.",
+				option3: "He received a recorded phone message from Krusty the Klown\'s AT-5000 auto-dialer.",
+				option4: "His coworkers (Lenny and Carl) dared him to after Mr. Burns said he would fund any employee’s education."
 			},
 			picture: "../images/krustys_clown_college_billboard.png"
 		},
 
-		{ question: "How did Homer make it up to Lisa after Bart glued a bunch of novelty items to his face and caused her to miss an event she was really looking forward to?",
-			answer: {
-				incorrect_1: "He suffered through a vegetarian meal with her.",
-				correct: "He helped her break into a museum.",
-				incorrect_2: "He didn\'t parent her for twenty-four hours.",
-				incorrect_3: "He bought her a lemur."
+		question08: {
+			ask:		"How did Homer make it up to Lisa after Bart glued a bunch of novelty items to his face and caused her to miss an event she was really looking forward to?",
+			correct: 	"option2",
+			options: {
+				option1: "He suffered through a vegetarian meal with her.",
+				option2: "He helped her break into a museum.",
+				option3: "He didn\'t parent her for twenty-four hours.",
+				option4: "He bought her a lemur."
 			},
 			picture: "../images/lost_our_lisa.png"
 		},
 
-		{ question: "How did Homer score coupons to a spa for himself and Marge?",
-			answer: {
-				incorrect_1: "In a raffle while visiting Grandpa at the old folks home.",
-				correct: "By posing as \"Count Homer\" and test driving a Bentley.",
-				incorrect_2: "By selling his spare Christmas tree stand to Ned Flanders at a rip-off rate.",
-				incorrect_3: "Armed robbery."
+		question09: {
+			ask:		"How did Homer score coupons to a spa for himself and Marge?",
+			correct: 	"option2",
+			options: {
+				option1: "In a raffle while visiting Grandpa at the old folks home.",
+				option2: "By posing as \"Count Homer\" and test driving a Bentley.",
+				option3: "By selling his spare Christmas tree stand to Ned Flanders at a rip-off rate.",
+				option4: "Armed robbery."
 			},
 			picture: "../images/count_homer.jpg"
 		},
 		
-		{ question: "What video game did Bart try to shoplift?",
-			answer: {
-				incorrect_1: "Touch of Death",
-				correct: "Bonestorm",
-				incorrect_2: "Radioactive Man",
-				incorrect_3: "Lee Carvallo\'s Putting Challenge"
+		question10: {
+			ask:		"What video game did Bart try to shoplift?",
+			correct: 	"option2",
+			options: {
+				option1: "Touch of Death",
+				option2: "Bonestorm",
+				option3: "Radioactive Man",
+				option4: "Lee Carvallo\'s Putting Challenge"
 			},
 			picture: "../images/bonestorm.jpg"
 		},
 		
-		{ question: "What did Homer ingest before going on a vision quest?",
-			answer: {
-				correct: "Guatamalan Insanity Peppers",
-				incorrect_1: "Shelbyville Shrooms",
-				incorrect_2: "LSD",
-				incorrect_3: "Ayahuasca"
+		question11: {
+			ask:		"What did Homer ingest before going on a vision quest?",
+			correct:	"option1",
+			options: {
+				option1: "Guatamalan Insanity Peppers",
+				option2: "Shelbyville Shrooms",
+				option3: "LSD",
+				option4: "Ayahuasca"
 			},
 			picture: "../images/wiggum_pepper.jpg"
 		},
 		
-		{ question: "What secret society did Homer join?",
-			answer: {
-				incorrect_1: "The Moderately-Priced Masons.",
-				incorrect_2: "The Diamond Shredders.",
-				correct: "The Stonecutters.",
-				incorrect_3: "The Star Killers."
+		question12: {
+			ask:		"What secret society did Homer join?",
+			correct:	"option3",
+			options: {
+				option1: "The Moderately-Priced Masons.",
+				option2: "The Diamond Shredders.",
+				option3: "The Stonecutters.",
+				option4: "The Star Killers."
 			},
 			picture: "../images/stonecutters.png"
 		},
 		
-		{question: "What did Lisa build in her free time while the teachers union was on strike?",
-			answer: {
-				correct: "A perpetual motion machine.",
-				incorrect_1: "An AI robot.",
-				incorrect_2: "A recycling plant.",
-				incorrect_3: "A Rube Goldberg machine."
+		question13: {
+			ask:		"What did Lisa build in her free time while the teachers union was on strike?",
+			correct:	"option1",
+			options: {
+				option1: "A perpetual motion machine.",
+				option2: "An AI robot.",
+				option3: "A recycling plant.",
+				option4: "A Rube Goldberg machine."
 			},
 			picture: "../images/perpetual_motion_machine.jpg"
 		},
 		
-		{ question: "After Milhouse\'s parents got divorced, his mother started dating...",
-			answer: {
-				incorrect_1: "Her sewing instructor.",
-				incorrect_2: "Milhouse\'s dad\'s boss at the cracker factory.",
-				incorrect_3: "A woman she met at the library.",
-				correct: "An American Gladiator named Pyro."
+		question14: {
+			ask:		"After Milhouse\'s parents got divorced, his mother started dating...",
+			correct:	"option4",
+			options: {
+				option1: "Her sewing instructor.",
+				option2: "Milhouse\'s dad\'s boss at the cracker factory.",
+				option3: "A woman she met at the library.",
+				option4: "An American Gladiator named Pyro."
 			},
 			picture: "../images/pyro_and_gyro.png"
 		},
 
-		{ question: "How did Homer achieve work-from-home status?",
-			answer: {
-				correct: "He got his weight above 300 pounds and claimed disability.",
-				incorrect_1: "He won a donut-eating contest at work.",
-				incorrect_2: "He rigged a security camera to play a loop of him working. (Like in that movie, \"The Bus That Couldn't Slow Down.\")",
-				incorrect_3: "He won a bet that Mr. Burns couldn’t think of his name."
+		question15: {
+			ask:		"How did Homer achieve work-from-home status?",
+			correct:	"option1",
+			options: {
+				option1: "He got his weight above 300 pounds and claimed disability.",
+				option2: "He won a donut-eating contest at work.",
+				option3: "He rigged a security camera to play a loop of him working. (Like in that movie, \"The Bus That Couldn't Slow Down.\")",
+				option4: "He won a bet that Mr. Burns couldn’t think of his name."
 			},
 			picture: "../images/king_size_homer.png"
 		},
 		
-		{ question: "At which store did Homer purchase a gun?",
-			answer: {
-				incorrect_1: "Guns \"R\" Us.",
-				correct: "Bloodbath and Beyond.",
-				incorrect_2: "Lionel Hutz\'s Discount Gun Emporium.",
-				incorrect_3: "Target (with a human silhouette logo instead of a round target)."
+		question16: {
+			ask:		"At which store did Homer purchase a gun?",
+			correct:	"option2",
+			options: {
+				option1: "Guns \"R\" Us.",
+				option2: "Bloodbath and Beyond.",
+				option3: "Lionel Hutz\'s Discount Gun Emporium.",
+				option4: "Target (with a human silhouette logo instead of a round target)."
 			},
 			picture: "../images/bloodbath_and_beyond.png"
 		}	
