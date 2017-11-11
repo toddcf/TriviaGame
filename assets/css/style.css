@@ -1,3 +1,8 @@
+html, body {
+	/*This doesn't seem to do anything.*/
+	height: 100%;
+}
+
 header {
 	width: 100%;
 	background-color: #ffff00;
@@ -21,7 +26,8 @@ header h1 {
 	padding: 30px 10px 10px 10px;
 }
 
-#main-container {
+#wrapper {
+/*"wrapper" used to be called "main-container"*/
 	width: 100%;
 	background-color: black;
 	margin: 0;
@@ -68,7 +74,20 @@ header h1 {
 }
 
 button {
-	align-items: center;
+	align-items: center; /*Seems to do nothing.*/
+	display: block; /*Seems to do nothing.*/
+	width: 50%;
+	height: 100%; /*Seems to do nothing.*/
+	margin: 0 auto; /*Centers the button.*/
+	cursor: pointer; /*Cursor turns into a pointer when hovering.*/
+	font-size: 24px;
+	font-weight: bold;
+	color: #ed3133;
+	padding: 15px;
+}
+
+button: hover {
+	/*Add something here.*/
 }
 
 footer {

@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	
 	<title>"The Simpsons" Trivia Game</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
 
@@ -17,18 +14,17 @@
 		<h1>Trivia Game!</h1>
 	</header>
 
-	<div id="main-container">
+	<!-- Why is there a white gap around every margin of the page except the right, and how do I get rid of it? -->
+	<div id="wrapper">
+	<!-- "wrapper" used to be called "main-container" -->
 		
 		<div class="inner-containers" id="game-container">
 			<div class="inner-containers" id="control-panel">
 				<div class="inner-containers" id="timer">
-					<p>TIMER DISPLAY will go here.</p>
+					<!-- <p>TIMER DISPLAY will go here.</p> -->
 				</div>
-
-				<div class="inner-containers" id="start">
-					<!-- START button -->
-					<p>START button will go here.</p>
-				</div>
+				<!-- START button -->
+				<button id="start">ENTER SPRINGFIELD!</button>
 			</div>
 
 			<div class="inner-containers" id="q_and_a">
@@ -53,7 +49,9 @@
 		<h3>&copy Copyright 2016 Todd Croak-Falen</h3>
 	</footer>
 
+	<!-- jQuery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<!-- JavaScript -->
 	<script type="text/javascript" src="assets/javascript/app.js"></script>
 
 </body>
